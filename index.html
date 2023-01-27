@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Media screen</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper{
+            background-color: aqua;
+            width: 100%;
+            height: 100vh;
+        }
+        ol{
+            display: flex;justify-content: center;align-items: center;
+            list-style: none;
+        }
+        ol>li{
+            background-color: white;
+            padding: 10px 20px;
+            margin: 2px;
+        }
+        @media screen AND (max-width:768){
+            .wrapper{
+                background-color: brown;
+            }
+        }
+        @media screen AND (max-width:522px){
+            ol{
+                flex-direction: column;
+            }
+        }
+        @media screen AND (max-width:425){
+            .wrapper{
+                background-color: violet;
+            }
+        }
+            
+    
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <ol>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+            <li>E</li>
+            <li>F</li>
+            
+            
+        </ol>
+    </div>
+</body>
+</html>
